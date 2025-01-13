@@ -44,7 +44,7 @@ function App() {
 
   return (
     <>
-    <h1 className="">Explore Our Holiday Sale Now!</h1>
+    <h1 className="font-serif m-10  p-4 rounded">Explore Our Holiday Sale Now!</h1>
     {cards.map(({ title, description, buttonText, imageUrl }, index) => (
       <Card 
         key={index} 
