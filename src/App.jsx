@@ -31,15 +31,20 @@ function App() {
       title: "Tropical Holidays",
       description: "Trade the cold for sun, sand, and palm trees with a warm holiday getaway.",
       buttonText: "Book Now",
-      imageUrl: "https://cdn.hometogo.net/assets/media/pics/1200_628/6118c61fb5786.jpg"
+      imageUrl: "https://www.telegraph.co.uk/content/dam/eip/apl-media/luxury-islands/apl-islands-header-credit-getty.jpg?imwidth=680"
     },
-    
+    {
+      title: "Mountain Skiing Adventure",
+      description: "Experience the thrill of skiing down pristine slopes surrounded by breathtaking mountain views.",
+      buttonText: "Book Your Trip",
+      imageUrl: "https://www.planetware.com/wpimages/2018/10/top-ski-resorts-world-france-haute-savoie-chamonix.jpg"
+    }
   ];
   
 
   return (
     <>
-    <h1>Explore Our Holiday Sale Now!</h1>
+    <h1 className="">Explore Our Holiday Sale Now!</h1>
     {cards.map(({ title, description, buttonText, imageUrl }, index) => (
       <Card 
         key={index} 
