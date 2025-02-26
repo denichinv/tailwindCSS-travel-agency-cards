@@ -42,20 +42,22 @@ function App() {
   ];
   
 
-  return (
-    <>
-    <h1 className="font-serif m-10  p-4 rounded">Explore Our Holiday Sale Now!</h1>
-    {cards.map(({ title, description, buttonText, imageUrl }, index) => (
-      <Card 
-        key={index} 
-        title={title} 
-        description={description} 
-        buttonText={buttonText} 
-        imageUrl={imageUrl} 
-      />
-    ))}
-    </>
-  )
+return (
+  <>
+    <h1 className="font-serif m-10 p-4 rounded">Explore Our Holiday Sale Now!</h1>
+    <div className="card-container">
+      {cards.map(({ title, description, buttonText, imageUrl }, index) => (
+        <Card 
+          key={index} 
+          title={title} 
+          description={description} 
+          buttonText={buttonText} 
+          imageUrl={imageUrl} 
+        />
+      ))}
+    </div>
+  </>
+)
 }
 
 export default App

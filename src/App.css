@@ -3,17 +3,74 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
+/* Holiday theme colors */
+:root {
+  --holiday-red: #d42426;
+  --holiday-green: #0f8b3b;
+  --holiday-gold: #e6c430;
+  --holiday-blue: #2c4c9c;
+  --snow-white: #f9f9f9;
+}
+
+/* Page title styling */
+h1.font-serif {
+  background: linear-gradient(135deg, var(--holiday-red), var(--holiday-green));
+  color: var(--snow-white);
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(-1deg);
+  margin-bottom: 3rem;
+}
+
+/* Card styling enhancements */
+.card {
+  padding: 2em;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styling */
+button {
+  background: linear-gradient(to right, var(--holiday-blue), var(--holiday-green));
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.75em 1.5em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-color: var(--holiday-gold);
+}
+
+/* Logo animation improvements */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms, transform 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--holiday-gold));
+  transform: scale(1.1);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,10 +90,51 @@
   }
 }
 
-.card {
-  padding: 2em;
+/* Card container layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Dark/light mode improvements */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+  }
+  
+  h1.font-serif {
+    background: linear-gradient(135deg, #d42426, #116b2f);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    background: linear-gradient(to right, var(--holiday-blue), var(--holiday-green));
+    color: white;
+  }
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  h1.font-serif {
+    font-size: 2.5em;
+    margin: 1rem 0 2rem;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .read-the-docs {
   color: #888;
+  margin-top: 2rem;
+  font-size: 0.9em;
 }
