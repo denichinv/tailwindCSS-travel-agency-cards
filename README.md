@@ -62,14 +62,3 @@ src/
 
 ![Preview](./screenshot.png)
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-### 🙌 Contributing
-
-Have ideas to improve the design or code? Feel free to open a pull request!
