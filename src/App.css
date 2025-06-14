@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* Holiday theme colors */
@@ -44,7 +44,11 @@ h1.font-serif {
 
 /* Button styling */
 button {
-  background: linear-gradient(to right, var(--holiday-blue), var(--holiday-green));
+  background: linear-gradient(
+    to right,
+    var(--holiday-blue),
+    var(--holiday-green)
+  );
   color: white;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -104,7 +108,7 @@ button:hover {
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
   }
-  
+
   h1.font-serif {
     background: linear-gradient(135deg, #d42426, #116b2f);
   }
@@ -112,7 +116,11 @@ button:hover {
 
 @media (prefers-color-scheme: light) {
   button {
-    background: linear-gradient(to right, var(--holiday-blue), var(--holiday-green));
+    background: linear-gradient(
+      to right,
+      var(--holiday-blue),
+      var(--holiday-green)
+    );
     color: white;
   }
 }
@@ -122,14 +130,10 @@ button:hover {
   #root {
     padding: 1rem;
   }
-  
+
   h1.font-serif {
     font-size: 2.5em;
     margin: 1rem 0 2rem;
-  }
-  
-  .card-container {
-    grid-template-columns: 1fr;
   }
 }
 
