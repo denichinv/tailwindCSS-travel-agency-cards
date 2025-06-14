@@ -1,4 +1,4 @@
-# ✈️ TailwindCSS Travel Agency Cards
+# ✈️ Travel Agency Cards
 
 A simple and elegant **demo project** built with React and Tailwind CSS, showcasing travel destination cards in a responsive layout.
 
